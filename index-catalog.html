@@ -30,22 +30,57 @@
            <h1>Магазин готовых шаблонов</h1>
         
         
-        <!--здесь будет форма-->
-            <section>
-            <ul>
-                <li><h2>Веб-сайты</h2></li>
-                <li>Адаптивная</li>
-                <li>Фиксированная</li>
-                <li>Резиновая</li>
-                <li><h2>Сетка:</h2></li>
-                <li>Слайдер</li>
-                <li>Блок преимуществ</li>
-                <li>Новости</li>
-                <li>Галерея</li>   
-                <li>Корзина</li>
-                <li><button type="button">Показать</button>
-            </ul>    
-            </section>
+            <!--filter-->
+            
+            <h2>СТОИМОСТЬ:</h2>
+             <form method="get">
+            <input type="range" min="1" max="100" value="50" class="slider">
+                 <label for="min-price">ОТ<input type="number" id="min-price"  name="min-pice" value="0"></label>
+                 <label for="max-price">ДО<input type="number" id="max-price"  name="max-price" value="15 000"></label>
+            </form>
+            
+            <h2>СОРТИРОВАТЬ:</h2>            
+            <div>
+                <ul>
+                    <li><button type="button">По цене</button></li>
+                    <li><button type="button">По типу</button></li>
+                    <li><button type="button">По названию</button></li>
+                </ul>
+                <ul>
+                <button type="button"><img src="images/icon-up-dir.svg"></button>
+                <button type="button"><img src="images/icon-down-dir.svg" width="11" ></button>
+                </ul>    
+            </div>
+            
+            
+            <h2>Веб-сайты</h2>
+            <form method="get">
+                <label for="radio-filter"><input type="radio" checked id="radio-filter">Адаптивная</label>
+                <br>
+                <label for="radio-filter"><input type="radio" id="radio-filter">Фиксированная</label>
+                <br>
+                <label for="radio-filter"><input type="radio" id="radio-filter">Резиновая</label>
+                <br>
+            </form>
+            
+            <h2>Сетка:</h2>
+            <form method="get">
+                <label for="checkbox-filter"><input type="checkbox" checked id="checkbox-filter">Слайдер</label>
+                <br>
+                <label for="checkbox-filter"><input type="checkbox" id="checkbox-filter">Блок преимуществ</label>
+                <br>
+                <label for="checkbox-filter"><input type="checkbox" checked id="checkbox-filter">Новости</label>
+                <br>
+                <label for="checkbox-filter"><input type="checkbox" id="checkbox-filter">Галерея</label>
+                <br>
+                <label for="checkbox-filter"><input type="checkbox" id="checkbox-filter">Корзина</label>
+                <br>
+                <button type="button">Показать</button>
+            </form>    
+
+       
+            
+            <!--filter--> 
             
             <section>
                 <ul>
@@ -57,25 +92,37 @@
                     <li><a href=""><img src="images/img-kvast.jpg" alt="Кваст"></a></li>
                 </ul>
             </section>
-            
-        
-        </main>    
+
        
-        <!--здесь будет форма-->
+       
+            <form method="get">
+                <button type="button">1</button>
+                <button type="button">2</button>   
+                <button type="button">3</button>  
+                <button type="button">следующая</button> 
+            </form>
+            
+            
+       </main>  
         
-       <footer>
+        
+        
+        
+        
+        <footer>
                 <section>
                        <ul>
-                           <li><a href=""><img src="images/vk-icon.svg" alt="vkontakte" style="background-color:#eeeeee"></a></li>
-                           <li><a href=""><img src="images/fb-icon.svg" alt="facebook" style="background-color:#eeeeee"></a></li>
-                           <li><a href=""><img src="images/insta-icon.svg" alt="instagram" style="background-color:#eeeeee"></a></li>
+                           <li><a href="">vkontakte</a></li>
+                           <li><a href="">facebook</a></li>
+                           <li><a href="">instagram</a></li>
                        </ul>
                         <div>  
                            <b>Давайте дружить, это выгодно!</b>
                            <p>Скидка 10% для друзей из социальных сетей.</p>
                         </div>     
                  </section>
-        </footer>       
+        </footer>         
+           
          
   </body>
 </html>
