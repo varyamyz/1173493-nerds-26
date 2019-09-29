@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Нёрдс</title>
+     <link rel="stylesheet" href="styles.css">
 
   
       
@@ -12,15 +13,15 @@
     <body>
         <header>
               <nav>
-                  <div><a href="index.html"><img src="images/nerds-logo.svg"  alt="Лого Нердс"></a>
+                  <div class="logo"><a href="index.html"><img src="images/nerds_logo.svg"  alt="Лого Нердс"></a>
                   </div>
-                  <ul>
+                  <ul class="site-navigation">
                       <li><a href="#">Студия</a></li>
                       <li><a href="#">Клиенты</a></li>
                       <li><a href="index-catalog.html">Магазин</a></li>
                       <li><a href="#">Контакты</a></li>
                   </ul>
-                  <ul>
+                  <ul class="site-navigation">
                       <li><a href="#">Корзина</a></li>
                   </ul>
                </nav>
@@ -34,19 +35,19 @@
                     <b>Долго, дорого, скрупулезно.</b>
                     <p>Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
                     <a href="#">УЗНАТЬ БОЛЬШЕ</a>
-                    <img src="images/slide_picture_1.jpg">
+                    <img src="images/slide_picture_1.jpg" class="advantage-picture">
                 </div>
                 <div>
                     <b>Любим математику как никто другой</b>
                     <p>Никакого креатива, только математические формулы для расчета идеальных пропорций.</p>
                     <a href="#">УЗНАТЬ БОЛЬШЕ</a>
-                    <img src="images/slide_picture_2.jpg">
+                    <img src="images/slide_picture_2.jpg" class="advantage-picture">
                 </div>
                    <div>
                     <b>Только ночь, только хардкор</b>
                     <p>Работать днем, как все? Мы против этого.Ближе к полуночи работа только начинается.</p>
                     <a href="#">УЗНАТЬ БОЛЬШЕ</a>
-                    <img src="images/slide_picture_3.jpg">
+                    <img src="images/slide_picture_3.jpg" class="advantage-picture">
                 </div>
             </section>    
         <!--slider-->    
@@ -54,27 +55,27 @@
             
             <ul>
                 <li>
-                    <img src="images/advantage_picture_red.jpg" alt="Beб-сайты">
+                    <img src="images/advantage_picture_red.jpg" class="advantage-picture" alt="Beб-сайты">
                     <h2>Веб-сайты</h2>
-                    <p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
-                    <a href="#">Заказать</a>  
+                    <p style="padding-bottom: 35px;">Мир никогда не будет прежним после того как увидит ваш сайт!</p>
+                    <a href="#" class="button-red">Заказать</a>  
                  </li>
 
 
                  <li>
-                    <img src="images/advantage_picture_green.jpg" alt="Приложения">
+                    <img src="images/advantage_picture_green.jpg" class="advantage-picture" alt="Приложения">
                     <h2>Приложения</h2>
-                     <p>Покорите топ-10 приложений в AppStore и Google Playир никогда не будет прежним после того как увидит ваш сайт!</p>
-                    <a href="#">Заказать</a>
+                     <p style="padding-bottom: 35px;">Покорите топ-10 приложений в AppStore и Google Playuр никогда не будет прежним после того как увидит ваш сайт!</p>
+                    <a href="#" class="button-green">Заказать</a>
                 </li>
 
 
                 <li>
-                    <img src="images/advantage_picture_yellow.jpg" alt="Презентации">
+                    <img src="images/advantage_picture_yellow.jpg" class="advantage-picture" alt="Презентации">
                     <h2>Презентации</h2>
-                    <p>Вы даже не подозреваете, 
+                    <p style="padding-bottom: 35px;">Вы даже не подозреваете, 
                      насколько вы изумительны!<p>
-                   <a href="#">Заказать</a>
+                   <a href="#" class="button-yellow">Заказать</a>
                 </li>
              </ul>    
             
@@ -93,7 +94,7 @@
                 </ul>  
             </div>
             <div>
-                <img src="images/nerds_picture.jpg" alt="nerd's">
+                <img src="images/nerds_picture.jpg" alt="nerd's" style="width:360x; height: 208px;">
                 <b>с 2004 года Любим точность во всем:</b>
                 <div>
                     <p>146%</p>
@@ -109,17 +110,14 @@
                 </div>    
             </div>
             
-            <ul>
-                <li>
-                    <a href="#"><img src="images/html_academy_logo.png"></a>
-                </li>
-                <li>
-                    <a href="#"><img src="images/barbershop_logo.png"></a>
-                </li>
-                <li>
-                    <a href="#"><img src="images/pink_logo.png"></a>
-                </li>
-                <li>
+            <ul >
+                <li  class="partner">
+                    <a href="#"><img src="images/html_academy_logo.png"></a></li>
+                <li  class="partner">
+                    <a href="#"><img src="images/barbershop_logo.png"></a></li>
+                <li  class="partner">
+                    <a href="#"><img src="images/pink_logo.png"></a></li>
+                <li  class="partner">
                     <a href="#"><img src="images/mishka_logo.png"></a>
                 </li>
             </ul>
@@ -130,19 +128,19 @@
         <!--map-->
             <section>
                 <img src="images/map_logo_nerds.png" alt="191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">
-                <div>
+                <div class="white-back-map">
                     <h2>NЁRDS DESIGN STUDIO</h2>
-                    <p>191186, Санкт-Петербург, 
+                    <p class="map-text">191186, Санкт-Петербург, 
                         ул. Б. Конюшенная, д. 19/8</p>
-                    <p>тел. +7 (812) 275-75-75</p>
-                    <button type="button">Напишите нам</button>
+                    <p class="map-text">тел. +7 (812) 275-75-75</p>
+                    <button type="button" class="write-back-btn">Напишите нам</button>
                 </div>
             </section>
         <!--map-->    
 
         <!--popup--> 
-        <div>
-            <b>Напишите нам</b>
+        <div   class="white-back">
+            <b class="title-popup">Напишите нам</b>
             <button type="button" aria-label="закрыть"></button>
             <form method="post" action="https://echo.htmlacademy.ru">
                 <label>Ваше имя:
@@ -154,7 +152,7 @@
                 <label>Текст письма:
                     <textarea name="text" placeholder="В свободной форме"></textarea>
                 </label>   
-                <button type="submit">отправить</button>
+                <button type="submit" class="write-back-btn">отправить</button>
             </form>
         </div>  
         <!--popup-->     
@@ -167,19 +165,20 @@
         <footer>
                 <section>
                        <ul>
-                           <li>
+                           <li class="grey-cirle">
                                <a href="#" aria-label="nerd's во вконтакте">vkontakte</a>
-                           </li>
-                           <li>
+                           </li>                           
+
+                           <li class="grey-cirle">
                                <a href="#" aria-label="nerd's в фейсбуке">facebook</a>
                            </li>
-                           <li>
+                           <li class="grey-cirle">
                                <a href="#" aria-label="nerd's в инстаграме">instagram</a>
                            </li>
                        </ul>
                         <div>  
-                           <b>Давайте дружить, это выгодно!</b>
-                           <p>Скидка 10% для друзей из социальных сетей.</p>
+                            <b class="footer-titel">Давайте дружить, это выгодно!</b>
+                           <p style="color: #444444;">Скидка 10% для друзей из социальных сетей.</p>
                         </div>     
                  </section>
         </footer>         
