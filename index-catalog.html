@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Нёрдс</title>
+       <link rel="stylesheet" href="normalize.css">
       <link rel="stylesheet" href="styles.css">
 
 
@@ -12,30 +13,37 @@
     <body>
     
         <header>
+            
               <nav>
-                  <div class="logo"><a href="index.html"><img src="images/nerds_logo.svg"  alt="Лого Нердс"></a>
-                  </div>
+                <div  style="display: flex; justify-content:space-between;">  
+                  <ul>
+                      <li class="logo breadcrumbs" width="160px"><a href="index.html"><img src="images/nerds_logo.svg"  alt="Лого Нердс"></a></li>   
+                  </ul>  
                   <ul class="site-navigation">
-                      <li><a href="#">Студия</a></li>
-                      <li><a href="#">Клиенты</a></li>
-                      <li><a href="index-catalog.html">Магазин</a></li>
-                      <li><a href="#">Контакты</a></li>
+                      <li class="breadcrumbs"><a href="#">Студия</a></li>
+                      <li class="breadcrumbs"><a href="#">Клиенты</a></li>
+                      <li class="breadcrumbs"><a href="index-catalog.html">Магазин</a></li>
+                      <li class="breadcrumbs" ><a href="#">Контакты</a></li>
                   </ul>
                   <ul class="site-navigation">
-                      <li><a href="#">Корзина</a></li>
+                       <li class="breadcrumbs">  <li class="breadcrumbs"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15" style="margin-right:10px;"><circle fill="#a6a6a6" cx="4.5" cy="13.5" r="1.5"/><circle fill="#a6a6a6" cx="12.5" cy="13.5" r="1.5"/><path fill="#a6a6a6" d="M15 2H4.07l-.422-2H0v2h2.031l1.985 9H15V9H9.441L15 6.951z"/></svg>Корзина</a></li>
                   </ul>
+            </div>
                </nav>
         </header>
+               
+             <h1 class="page-name">Магазин готовых шаблонов</h1>
+      
     
         <main> 
-          <h1 style="background-color:#eeeeee; text-align:center;">Магазин готовых шаблонов</h1>
+         
         
         
             <!--filter-->
             
             <b>СТОИМОСТЬ:</b>
             <form method="get" action="https://echo.htmlacademy.ru" class="price-slider-back">
-              <input type="range" min="1" max="100" value="50" class="slider">
+              <input type="range" min="1" max="100" value="50" class="slider"><br>
                  <label for="min-price">ОТ<input type="number" id="min-price"  name="min-pice" value="0" placeholder="0"></label>
                  <label for="max-price">ДО<input type="number" id="max-price"  name="max-price" value="15 000" placeholder="15 000"></label>
            
@@ -103,28 +111,92 @@
             
             <section>
                 <ul>
-                    <li>
+                    <li class="website-item">
                         <a href="#">
-                            <img src="images/browser.svg" class="browser"><img src="images/img_sedona.jpg" alt="Седона">
+                            <img src="images/img_sedona.jpg" alt="Седона">
                         </a>
+                        <div class="grey-back visually-hidden">
+                          <div>
+                            <a href="#">
+                                    <p class="website-item-name">Sedona</p>
+                                    <p style="text-align: center;">Продуктовый лендинг приложения для iOS и Android</p>
+                                    <button type="button" class="price-btn">9 900 руб.</button>
+                            </a>
+                          </div>
+                        </div>
  
                     </li>
-                    <li>
+                    <li class="website-item">
                         <a href="">
-                            <img src="images/browser.svg" class="browser"><img src="images/img_pink.jpg" alt="Pink">
+                            <img src="images/img_pink.jpg" alt="Pink">
                         </a>
+                        <div class="grey-back visually-hidden">
+                          <div>
+                                <a href="#">
+                                    <p class="website-item-name">Pink app</p>
+                                    <p style="text-align: center;">Продуктовый лендинг приложения для iOS и Android</p>
+                                    <button type="button" class="price-btn">9 900 руб.</button>
+                                </a>
+                          </div>
+                        </div>
                     </li>
-                    <li>
-                        <a href=""><img src="images/browser.svg" class="browser"><img src="images/img_barbershop.jpg" alt="Барбершоп"></a>
+                    <li class="website-item">
+                        <a href="">
+                            <img src="images/img_barbershop.jpg" alt="Барбершоп">
+                        </a>
+                        <div class="grey-back visually-hidden">
+                          <div>
+                                <a href="#">
+                                    <p class="website-item-name">Barbershop Borodinski</p>
+                                    <p style="text-align: center;">Продуктовый лендинг приложения для iOS и Android</p>
+                                    <button type="button" class="price-btn">9 900 руб.</button>
+                                </a>
+                          </div>
+                        </div>
                     </li>
-                    <li>
-                        <a href=""><img src="images/browser.svg" class="browser"><img src="images/img_mishka.jpg" alt="Mishka"></a>
+                    <li class="website-item">
+                        <a href="">
+                            <img src="images/img_mishka.jpg" alt="Mishka">
+                        </a>
+                        <div class="grey-back visually-hidden">
+                          <div>
+                                <a href="#">
+                                    <p class="website-item-name">Mishki</p>
+                                    <p style="text-align: center;">Продуктовый лендинг приложения для iOS и Android</p>
+                                    <button type="button" class="price-btn">9 900 руб.</button>
+                                </a>
+                          </div>
+                        </div>
                     </li>
-                    <li>
-                        <a href=""><img src="images/browser.svg" class="browser"><img src="images/img_aplus.jpg" alt="Aplus"></a>
+                    <li class="website-item">
+                        <a href="">
+                            <img src="images/img_aplus.jpg" alt="Aplus">
+                        </a>
+                         <div class="grey-back visually-hidden">
+                          <div>
+                                <a href="#">
+                                    <p class="website-item-name">Aplus</p>
+                                    <p style="text-align: center;">Продуктовый лендинг приложения для iOS и Android</p>
+                                    <button type="button" class="price-btn">9 900 руб.</button>
+                                </a>
+                          </div>
+                        </div>
                     </li>
-                    <li>
-                        <a href=""><img src="images/browser.svg" class="browser"><img src="images/img_kvast.jpg" alt="Кваст"></a>
+                    <li class="website-item">
+                       
+                        <a href="">
+                            <img src="images/img_kvast.jpg" alt="Кваст">
+                        </a>
+                        <div class="grey-back visually-hidden">
+                          
+                                <a href="#">
+                                    <p class="website-item-name">Kvast</p>
+                                    <p style="text-align: center;">Продуктовый лендинг приложения для iOS и Android</p>
+                                    <button type="button" class="price-btn">9 900 руб.</button>
+                                </a>
+                         
+                       
+                      </div>
                     </li>
                 </ul>
             </section>
@@ -189,21 +261,24 @@
         
         <footer>
                 <section>
-                       <ul>
-                          <li class="grey-cirle">
-                               <a href="#" aria-label="nerd's во вконтакте">vkontakte</a>
+                       <ul class="socials">
+                           <li class="grey-cirle">
+                               <a href="#" aria-label="nerd's во вконтакте" class="social-vk"><span class="visually-hidden">vkontakte</span></a>
+                           </li>                           
+                           <li class="grey-cirle">
+                               <a href="#" aria-label="nerd's в фейсбуке" class="social-facebook"><span class="visually-hidden">facebook</span></a>
                            </li>
                            <li class="grey-cirle">
-                               <a href="#" aria-label="nerd's в фейсбуке">facebook</a>
-                           </li>
-                           <li class="grey-cirle">
-                               <a href="#" aria-label="nerd's в инстаграме">instagram</a>
+                               <a href="#" aria-label="nerd's в инстаграме" class="social-inst"><span class="visually-hidden">instagram</span></a>
                            </li>
                        </ul>
+
+
                         <div>  
                            <b class="footer-titel">Давайте дружить, это выгодно!</b>
                            <p style="color: #444444;">Скидка 10% для друзей из социальных сетей.</p>
-                        </div>     
+                        </div>    
+ 
                  </section>
         </footer>  
          

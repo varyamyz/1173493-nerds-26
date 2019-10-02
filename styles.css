@@ -1,7 +1,9 @@
 
 html { 
-    box-sizing: border-box; }
-    *, *::before, *::after { box-sizing: inherit; }
+    box-sizing: border-box; 
+    
+}
+*, *::before, *::after { box-sizing: inherit; }
 
 body{
     margin:0;
@@ -13,7 +15,27 @@ body{
     font-weight: normal;
     font-style: normal;
     font-stretch: normal;
+    margin: 0 auto;
+    background: #ffffff;
+    
+}
 
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 
@@ -28,23 +50,17 @@ body{
 img{ max-width: 100%
     
 }
-/*main{ 
-    margin: 49px 140px 49px 140px;
-}*/
 
-/*footer{
-    margin: 0px 140px 49px 140px;
-    
-    
-}*/
+main{
+    align-content: center;
+
+}
 
 header{
     background-color:#eeeeee;
+   
 }
 
-/*nav{
-    padding: 49px 140px 49px 140px;
-}*/
 a{
 	text-decoration: none;	
 }
@@ -119,8 +135,20 @@ textarea:hover{
 
 /* main */
 
+
+.advantages{
+  max-width:300px;
+  display: inline-block; 
+  position: relative;
+  vertical-align:top;
+  margin:20px;  
+}
+
 .site-navigation a{
-  color: #000000;
+color: #000000;
+box-sizing: border-box;
+display:flex;
+vertical-align: middle;
 }
 
 .site-navigation a:hover{
@@ -129,16 +157,17 @@ textarea:hover{
 
 .site-navigation a:active{
   color: #000000;
-  
+  box-shadow: 0px 2px 0px 0px #fb565a;
 }
 
- .site-navigation a::after{
-  width: 74px;
-  height: 2px;
-  background-color: #fb565a;
-  
-}
 
+
+.breadcrumbs{
+  display: inline-block; 
+  position: relative;
+  vertical-align:middle;
+  margin:20px;    
+}
 
 .button-red {
 	text-transform: uppercase;
@@ -205,7 +234,11 @@ textarea:hover{
 }
 
 .partner{
-    opacity:0.2;
+  opacity:0.2;
+  display: inline-block; 
+  position: relative;
+  vertical-align:middle;
+  margin:20px; 
  
 }
 
@@ -224,12 +257,85 @@ textarea:hover{
   width: 79px;
   height: 79px;
   background-color: #e1e1e1;
+
+}
+
+.socials {  
+    padding-left: 0px;
+    display:flex;
+    margin-right: 12px;
+}
+
+.socials a{
+    display:inline-block;
+    width: 79px;
+    height: 79px;
+    background-color: #e1e1e1;
+    border-radius: 50%;
+   
+}
+
+.socials a:hover{
+    display:inline-block;
+    width: 79px;
+    height: 79px;
+    background-color: #e74246;
+    border-radius: 50%;
+   
+}
+
+.socials a:focus{
+    display:inline-block;
+    width: 79px;
+    height: 79px;
+    background-color: #e74246;
+    border-radius: 50%;
+   
+}
+
+.social-vk{
+    background-image: url(images/vk-icon.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-right: 12px;
+    
+}
+
+.social-facebook{
+    background-image: url(images/fb-icon.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+     margin-right: 12px;
+}
+
+.social-inst{
+    background-image: url(images/insta-icon.svg);
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 
+.social-facebook:focus{
+    background-image: url(images/fb-icon.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+     margin-right: 12px;
+}
+
+.social-inst:focus{
+    background-image: url(images/insta-icon.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
 
 
 /* catalog */
+.page-name{
+    background-color:#eeeeee; 
+    text-align:center; 
+    padding-bottom: 49px; 
+    margin: 0 auto;"
+}
 .radio-on {
   width: 25px;
   height: 25px;
@@ -287,11 +393,7 @@ textarea:hover{
     box-shadow: inset 0px 3px 0 0 rgba(0, 1, 1, 0.1);
     background-color: #d5d5d5;}
 
-.price-slider-back {
-  width: 261px;
-  height: 81px;
-  background-color: #eeeeee;
-}
+
 
 .sort-by-btn{
   border:none;
@@ -314,7 +416,7 @@ textarea:hover{
     
 }
 .browser:hover{
-opacity:1;    
+  opacity:1;    
     
 }
 
@@ -324,6 +426,8 @@ opacity:1;
 .white-back {
   width: 319px;
   height: 308px;
+  background-color:#ffffff;
+
 }
 
 .write-back-btn {
@@ -353,6 +457,10 @@ opacity:1;
 .white-back-map {
   width: 319px;
   height: 308px;
+  background-color:#ffffff;
+  position: absolute;
+
+  left: 140px;
 }
 .title-popup{
   font-size: 45px;
@@ -369,3 +477,62 @@ opacity:1;
     color: #666666;
 }
 
+.website-item{
+  padding-top:40px;
+  background:url(images/browser.png);
+  background-repeat: no-repeat;
+  background-position: 0 0;  
+  
+}
+
+.website-item:hover{
+  padding-top:40px;
+  background:url(images/browser.svg);
+  background-repeat: no-repeat;
+  background-position: 0 0;  
+  
+}
+
+
+.grey-back {
+  width: 360px;
+  height: 231px;
+  background-color: #eeeeee;
+  text-align: center; 
+    padding:20px;
+}
+
+.website-item-name{
+  font-weight: bold;
+  font-size:18px;
+  text-transform: uppercase;
+  text-align: center; 
+}
+
+
+.price-btn{
+  width: 200px;
+  height: 50px;
+  border:none;
+  background-color: #fb565a;
+  font-size: 16px;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.13;
+  letter-spacing: normal;
+  text-align: center;
+  color: #ffffff;
+  text-transform:uppercase;
+  text-transform:uppercase;
+}
+
+.price-btn:hover{
+    background-color: #e74246;;
+    color: #ffffff;
+ 
+}
+.price-btn:active {
+  box-shadow: inset 0px 3px 0 0 rgba(0, 1, 1, 0.1);
+  background-color: #d7373b;
+]
