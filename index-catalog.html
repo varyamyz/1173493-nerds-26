@@ -50,43 +50,64 @@
             
             <fieldset>
             <legend>Сетка:</legend>
-            
-                <label>
-                    <input type="radio" checked name="website-filter" value="adaptive" class="radio-on">Адаптивная
-                </label>
-                <label>
-                    <input type="radio" name="website-filter" value="fixed" class="radio-off">Фиксированная
-                </label>
-                <label>
-                    <input type="radio" name="website-filter" value="elastic" class="radio-off">Резиновая
-                </label>
+                <ul>
+                    <li>
+                        <label>
+                           <input type="radio" checked name="website-filter" value="adaptive" class="radio-on">Адаптивная
+                        </label>
+                     </li>
+                    <li>
+                        <label>
+                            <input type="radio" name="website-filter" value="fixed" class="radio-off">Фиксированная
+                        </label>
+                    </li> 
+                    <li>
+                        <label>
+                            <input type="radio" name="website-filter" value="elastic" class="radio-off">Резиновая
+                        </label>
+                    </li>    
+                </ul>    
              </fieldset>       
             
             <fieldset>
                 <legend>Особенности:</legend>
-                    <label>
-                        <input type="checkbox" checked name="slider" class="checkbox-on">Слайдер
-                    </label>
-                    <label>
-                        <input type="checkbox" name="advantages">Блок преимуществ
-                    </label>
-                    <label>
-                        <input type="checkbox" checked name="news">Новости
-                    </label>
-                    <label>
-                        <input type="checkbox" name="gallery">Галерея
-                    </label>
-                    <label>
-                        <input type="checkbox" name="trash">Корзина
-                    </label>
+                    <ul>
+                       <li>
+                            <label>
+                                <input type="checkbox" checked name="slider" class="checkbox-on">Слайдер
+                            </label>
+                        </li> 
+                        <li>
+                            <label>
+                                <input type="checkbox" name="advantages">Блок преимуществ
+                            </label>
+                        </li>
+                        <li>
+                            <label>
+                                <input type="checkbox" checked name="news">Новости
+                            </label>
+                        </li>
+                        <li>
+                            <label>
+                                <input type="checkbox" name="gallery">Галерея
+                            </label>
+                        </li>
+                        <li>
+                            <label>
+                                <input type="checkbox" name="trash">Корзина
+                            </label>
+                        </li>    
+                        
+                    </ul>    
                 <button type="submit" class="grey-btn">Показать</button>
               </fieldset>   
             </form>    
 
                 
-             <legend>СОРТИРОВАТЬ:</legend>            
-                <div>
-                    <ul>
+                      
+                <div  style="display: flex;">
+                    <ul  style="display: flex;">
+                       <legend>СОРТИРОВАТЬ:</legend>   
                         <li>
                             <button type="button" class="sort-by-btn">По цене</button>
                         </li>
@@ -97,7 +118,7 @@
                             <button type="button" class="sort-by-btn">По названию</button>
                         </li>
                     </ul>
-                    <ul>
+                    <ul  style="display: flex;"> 
                         <li>
                             <button type="button" aria-label="по убыванию"></button>
                         </li>
