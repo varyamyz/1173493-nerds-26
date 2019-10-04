@@ -15,7 +15,7 @@
         <header>
             
               <nav>
-                <div  style="display: flex; justify-content:space-between;">  
+                <div class="wrapper" style="display: flex; justify-content:space-between;">  
                   <ul>
                       <li class="logo breadcrumbs" width="160px"><a href="index.html"><img src="images/nerds_logo.svg"  alt="Лого Нердс"></a></li>   
                   </ul>  
@@ -38,76 +38,33 @@
         <main> 
          
         
+        <div class="wrapper"> 
+            
+       <!--filter-->
+       
+             
         
-            <!--filter-->
             
-            <b>СТОИМОСТЬ:</b>
-            <form method="get" action="https://echo.htmlacademy.ru" class="price-slider-back">
-              <input type="range" min="1" max="100" value="50" class="slider"><br>
-                 <label for="min-price">ОТ<input type="number" id="min-price"  name="min-pice" value="0" placeholder="0"></label>
-                 <label for="max-price">ДО<input type="number" id="max-price"  name="max-price" value="15 000" placeholder="15 000"></label>
-           
-            
-            <fieldset>
-            <legend>Сетка:</legend>
-                <ul>
-                    <li>
-                        <label>
-                           <input type="radio" checked name="website-filter" value="adaptive" class="radio-on">Адаптивная
-                        </label>
-                     </li>
-                    <li>
-                        <label>
-                            <input type="radio" name="website-filter" value="fixed" class="radio-off">Фиксированная
-                        </label>
-                    </li> 
-                    <li>
-                        <label>
-                            <input type="radio" name="website-filter" value="elastic" class="radio-off">Резиновая
-                        </label>
-                    </li>    
-                </ul>    
-             </fieldset>       
-            
-            <fieldset>
-                <legend>Особенности:</legend>
-                    <ul>
-                       <li>
-                            <label>
-                                <input type="checkbox" checked name="slider" class="checkbox-on">Слайдер
-                            </label>
-                        </li> 
-                        <li>
-                            <label>
-                                <input type="checkbox" name="advantages">Блок преимуществ
-                            </label>
-                        </li>
-                        <li>
-                            <label>
-                                <input type="checkbox" checked name="news">Новости
-                            </label>
-                        </li>
-                        <li>
-                            <label>
-                                <input type="checkbox" name="gallery">Галерея
-                            </label>
-                        </li>
-                        <li>
-                            <label>
-                                <input type="checkbox" name="trash">Корзина
-                            </label>
-                        </li>    
-                        
-                    </ul>    
-                <button type="submit" class="grey-btn">Показать</button>
-              </fieldset>   
-            </form>    
-
+          <form method="get" action="https://echo.htmlacademy.ru" class="price-slider-back">
+           <div  style="display: flex;">
+            <ul style="padding: 0;">
+                <legend>СТОИМОСТЬ:</legend>
+             
+                  <li>
+                      <input type="range" min="1" max="100" value="50" class="slider price-slider">
+                  </li>
+                  <li>
+                       <label for="min-price">ОТ<input type="number" id="min-price"  name="min-pice" value="0" placeholder="0" class="price-form"></label>
                 
-                      
+                     <label for="max-price">ДО<input type="number" id="max-price"  name="max-price" value="15 000" placeholder="15 000" class="price-form"></label>
+                </li>
+              </ul>
+              
                 <div  style="display: flex;">
-                    <ul  style="display: flex;">
-                       <legend>СОРТИРОВАТЬ:</legend>   
+                    <ul  style="display: flex; padding:0 auto;">
+                        <ul>
+                      <li> <legend  style="margin-left: 301px;">СОРТИРОВАТЬ:</legend>   </li>
+                         </ul>
                         <li>
                             <button type="button" class="sort-by-btn">По цене</button>
                         </li>
@@ -126,13 +83,85 @@
                             <button type="button" aria-label="по возрастанию"></button>
                         </li>
                     </ul>    
-            </div>
+                </div>
+              </div>
+              
+        <div> 
+            
+       
+              </div>  
+            </form>    
+
+                
+                      
+
+            
             
             <!--filter--> 
             
+            <!--filter 2-->
             <section>
-                <ul>
-                    <li class="website-item">
+              <div style="display:flex;" >
+                <div>     
+                     <fieldset>
+                      <legend>Сетка:</legend>
+                            <ul style="padding:0;"> 
+                                <li>
+                                    <label>
+                                       <input type="radio" checked name="website-filter" value="adaptive" class="radio-on  filter-text">Адаптивная
+                                    </label>
+                                 </li>
+                                <li>
+                                    <label>
+                                        <input type="radio" name="website-filter" value="fixed" class="radio-off">Фиксированная
+                                    </label>
+                                </li> 
+                                <li>
+                                    <label>
+                                        <input type="radio" name="website-filter" value="elastic" class="radio-off">Резиновая
+                                    </label>
+                                </li>    
+                            </ul>    
+                         </fieldset>       
+
+                        <fieldset>
+                            <legend>Особенности:</legend>
+                                 <ul style="padding:0;"> 
+                                   <li>
+                                        <label>
+                                            <input type="checkbox" checked name="slider" class="checkbox-on filter-text">Слайдер
+                                        </label>
+                                    </li> 
+                                    <li>
+                                        <label>
+                                            <input type="checkbox" name="advantages" class="checkbox-on filter-text">Блок преимуществ
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label>
+                                            <input type="checkbox" checked name="news" class="checkbox-on filter-text">Новости
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label>
+                                            <input type="checkbox" name="gallery" class="checkbox-on filter-text">Галерея
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label>
+                                            <input type="checkbox" name="trash" class="checkbox-on filter-text">Корзина
+                                        </label>
+                                    </li>    
+
+                                </ul>    
+                            <button type="submit" class="grey-btn">Показать</button>
+                          </fieldset> 
+                       </div>   
+                    <!--filter 2--> 
+                <!--catalog-->  
+                  
+                <ul  style="justify-content: flex-end;display:flex;flex-wrap: wrap;   margin: 0 auto;">
+                    <li class="website-item" style="margin-right: 40px;">
                         <a href="#">
                             <img src="images/img_sedona.jpg" alt="Седона">
                         </a>
@@ -161,11 +190,11 @@
                           </div>
                         </div>
                     </li>
-                    <li class="website-item">
+                    <li class="website-item" style="margin-right: 40px;">
                         <a href="">
                             <img src="images/img_barbershop.jpg" alt="Барбершоп">
                         </a>
-                        <div class="grey-back visually-hidden">
+                        <div class="grey-back visually-hidden" >
                           <div>
                                 <a href="#">
                                     <p class="website-item-name">Barbershop Borodinski</p>
@@ -189,7 +218,7 @@
                           </div>
                         </div>
                     </li>
-                    <li class="website-item">
+                    <li class="website-item" style="margin-right: 40px;">
                         <a href="">
                             <img src="images/img_aplus.jpg" alt="Aplus">
                         </a>
@@ -220,69 +249,78 @@
                       </div>
                     </li>
                 </ul>
-            </section>
+            </div>
+        </section>
+       
+              <!--catalog-->
 
        
        
             
             <ul>
-                <li>
-                    <button type="button">1</button>
+                <li >
+                    <button type="button" class="page-number">1</button>
                 </li>
                 <li>
-                    <button type="button">2</button>
+                    <button type="button" class="page-number">2</button>
                 </li>
                 <li>
-                    <button type="button">3</button>
+                    <button type="button" class="page-number">3</button>
                 </li>    
                 <li>
-                    <button type="button">следующая</button>
+                    <button type="button" class="page-next">следующая</button>
                 </li>    
             </ul>    
 
-       <!--map-->
-            <section>
-                <img src="images/map_logo_nerds.png" alt="191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">
-                <div class="white-back-map">
+            
+        <!--adress-->
+         
+              <div class="white-back-map">
                     <h2>NЁRDS DESIGN STUDIO</h2>
-                    <p>191186, Санкт-Петербург, 
+                    <p class="map-text">191186, Санкт-Петербург, 
                         ул. Б. Конюшенная, д. 19/8</p>
-                    <p>тел. +7 (812) 275-75-75</p>
+                    <p class="map-text">тел. +7 (812) 275-75-75</p>
                     <button type="button" class="write-back-btn">Напишите нам</button>
-                </div>
-            </section>
-        <!--map-->    
+              </div>
+        
+            </div>
+         <!--adress-->
 
-        <!--popup--> 
-        <div  class="white-back">
-            <b class="title-popup">Напишите нам</b>
-            <button type="button" aria-label="закрыть"></button>
-            <form method="post" action="https://echo.htmlacademy.ru">
-                <label>Ваше имя:
-                    <input type="text" placeholder="Имя Фамилия" name="user-name">
-                </label> 
-                 <label>Ваш e-mail:
-                    <input type="email" placeholder="email@example.com" name="user-email">
-                </label>
-                <br>
-                <label>Текст письма:
-                    <textarea name="text" placeholder="В свободной форме"></textarea>
-                </label>   
-                <button type="submit" class="write-back-btn">отправить</button>
-            </form>
-        </div>  
-        <!--popup-->     
-      
-        
-        </main>  
-        
-        
-        
-        
-        
+        <!--map-->
+            <div>
+                    <img src="images/map_logo_nerds.png" alt="191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8" style="width:100%">
+            </div>
+        <!--map-->    
+            
+
+         <div class="wrapper">  
+                <!--popup--> 
+                <div   class="white-back" style="display: none;">
+                    <b class="title-popup">Напишите нам</b>
+                    <button type="button" aria-label="закрыть"></button>
+                    <form method="post" action="https://echo.htmlacademy.ru">
+                        <label class="popup-text">Ваше имя:
+                            <input type="text" placeholder="Имя Фамилия" name="user-name">
+                        </label>
+                         <label  class="popup-text">Ваш e-mail:
+                            <input type="email" placeholder="email@example.com" name="user-email">
+                        </label>
+                        <label  class="popup-text">Текст письма:
+                            <textarea name="text" placeholder="В свободной форме"></textarea>
+                        </label>   
+                        <button type="submit" class="write-back-btn">отправить</button>
+                    </form>
+                </div>  
+                <!--popup-->     
+          </div>
+
+    </main>
+
+      <!--форма-->
+        <div class="wrapper">    
         <footer>
                 <section>
-                       <ul class="socials">
+                        <ul class="socials">
                            <li class="grey-cirle">
                                <a href="#" aria-label="nerd's во вконтакте" class="social-vk"><span class="visually-hidden">vkontakte</span></a>
                            </li>                           
@@ -294,15 +332,13 @@
                            </li>
                        </ul>
 
-
                         <div>  
-                           <b class="footer-titel">Давайте дружить, это выгодно!</b>
+                            <b class="footer-titel">Давайте дружить, это выгодно!</b>
                            <p style="color: #444444;">Скидка 10% для друзей из социальных сетей.</p>
-                        </div>    
- 
+                        </div>     
                  </section>
-        </footer>  
-         
-  </body>
+        </footer>     
+      
+        </div>
+     </body>
 </html>
-   
