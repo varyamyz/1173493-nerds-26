@@ -14,9 +14,9 @@
         <header>
             
               <nav>
-                <div class="wrapper" style="display: flex; justify-content:space-between;">  
+                <div class="wrapper navigation">  
                   <ul>
-                      <li class="logo" width="160px"><a href="index.html"><img src="images/nerds_logo.svg"  alt="Лого Нердс"></a></li>   
+                      <li class="logo"><a href="index.html"><img src="images/nerds_logo.svg"  alt="Лого Нердс"></a></li>   
                   </ul>  
                   <ul class="site-navigation">
                       <li class="breadcrumbs"><a href="#">Студия</a></li>
@@ -27,52 +27,70 @@
                   <ul class="site-navigation">
                        <li class="breadcrumbs">  <li class="breadcrumbs"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15" style="margin-right:10px;"><circle fill="#a6a6a6" cx="4.5" cy="13.5" r="1.5"/><circle fill="#a6a6a6" cx="12.5" cy="13.5" r="1.5"/><path fill="#a6a6a6" d="M15 2H4.07l-.422-2H0v2h2.031l1.985 9H15V9H9.441L15 6.951z"/></svg>Корзина</a></li>
                   </ul>
-            </div>
-               </nav>
+               </div>
+           </nav>
         </header>
 
         <main>  
           <!--slider--> 
-            <section>
-                <div class="slider-picture-1">
-                    <div class="wrapper" style="padding:85px 0px 0px 40px;" >
-                        <b class="slider-text">Долго, дорого,<br>скрупулезно.</b>
-                        <p>Математически выверенный дизайн<br>для вашего сайта или мобильного приложения.</p>
-                        <a href="#" class="slider-btn">УЗНАТЬ БОЛЬШЕ</a>
+            <section class="slider">
+                  <div class="wrapper">
+                   <div>
+                     <h2 class="visually-hidden">Преимущества</h2>
+                            <input class="visually-hidden" type="radio" id="slider-1" name="toggle" checked>
+                            <input class="visually-hidden" type="radio" id="slider-2" name="toggle">
+                            <input class="visually-hidden" type="radio" id="slider-3" name="toggle">
+                         <div class="slider-controls">
+                              <label class="slider-controls-item slider-controls-item--1" for="slider-1">Первый</label>
+                              <label class="slider-controls-item slider-controls-item--2" for="slider-2">Второй</label>
+                              <label class="slider-controls-item slider-controls-item--3" for="slider-3">Третий</label>
+                         </div>
                     </div>
-                </div>
-                <div class="slider-picture-2">
-                    <div class="wrapper" style="padding:85px 0px 0px 40px;">
-                        <b class="slider-text">Любим математику,<br> как никто другой</b>
-                        <p>Никакого креатива, только математические формулы<br>для расчета идеальных пропорций.</p>
-                        <a href="#" class="slider-btn">УЗНАТЬ БОЛЬШЕ</a>
-                    </div>
-                </div>
-                 <div class="slider-picture-3">
-                      <div class="wrapper" style="padding:85px 0px 0px 40px;">
-                        <b class="slider-text">Только ночь,<br>только хардкор</b>
-                        <p>Работать днем, как все? Мы против этого.<br>Ближе к полуночи работа только начинается.</p>
-                        <a href="#" class="slider-btn">УЗНАТЬ БОЛЬШЕ</a>
-                     </div>
-                </div>
-            </section>    
+              <ul class="slider-list">
+                    <li class="slider-item" >
+                            <div class="slider-picture-1 ">  
+                                    <b class="slider-text">Долго, дорого, скрупулезно.</b>
+                                    <p>Математически выверенный дизайн<br>для вашего сайта или мобильного приложения.</p>
+                                    <a href="#" class="slider-btn">УЗНАТЬ БОЛЬШЕ</a>
+                            </div>  
+                           
+                    </li>
+                    <li class="slider-item visually-hidden" >
+                        <div class="slider-picture-2">
+                                <b class="slider-text">Любим математику,<br> как никто другой</b>
+                                <p>Никакого креатива, только математические формулы<br>для расчета идеальных пропорций.</p>
+                                <a href="#" class="slider-btn">УЗНАТЬ БОЛЬШЕ</a>
+                        </div>
+                    </li>
+                     <li class="slider-item visually-hidden" >
+                         <div class="slider-picture-3">
+                                <b class="slider-text">Только ночь,<br>только хардкор</b>
+                                <p>Работать днем, как все? Мы против этого.<br>Ближе к полуночи работа только начинается.</p>
+                                <a href="#" class="slider-btn">УЗНАТЬ БОЛЬШЕ</a>
+                        </div>
+                     
+                    </li>
+
+                </ul>   
+                        </div>
+            </section>
         <!--slider--> 
   
     <div class="wrapper">              
     
-            <ul style="display:flex;">
-                <li class="advantages" style="margin-right: 100px;">
-                    <img src="images/advantage_picture_red.jpg" class="advantage-picture" alt="Beб-сайты" style="margin-right: 40px;">
+            <ul class= "products">
+                <li class="advantages">
+                    <img src="images/advantage_picture_red.jpg" class="advantage-picture" alt="Beб-сайты" >
                     <h2>Веб-сайты</h2>
-                    <p style="padding-bottom: 35px;">Мир никогда не будет прежним после того как увидит ваш сайт!</p>
+                    <p class="products-text">Мир никогда не будет прежним после того как увидит ваш сайт!</p>
                     <a href="#" class="button-red">Заказать</a>  
                  </li>
 
 
-                 <li class="advantages" style="margin-right: 100px;">
-                    <img src="images/advantage_picture_green.jpg" class="advantage-picture" alt="Приложения" style="margin-right: 40px;">
+                 <li class="advantages">
+                    <img src="images/advantage_picture_green.jpg" class="advantage-picture" alt="Приложения" >
                     <h2>Приложения</h2>
-                     <p style="padding-bottom: 35px;">Покорите топ-10 приложений в AppStore и Google Playuр никогда не будет прежним после того как увидит ваш сайт!</p>
+                     <p class="products-text">Покорите топ-10 приложений в AppStore и Google Play</p>
                     <a href="#" class="button-green">Заказать</a>
                 </li>
 
@@ -80,21 +98,20 @@
                 <li class="advantages">
                     <img src="images/advantage_picture_yellow.jpg" class="advantage-picture" alt="Презентации">
                     <h2>Презентации</h2>
-                    <p style="padding-bottom: 35px;">Вы даже не подозреваете, 
+                    <p class="products-text">Вы даже не подозреваете, 
                      насколько вы изумительны!<p>
                    <a href="#" class="button-yellow">Заказать</a>
                 </li>
              </ul>    
             
-       <div class="big-divider" style="margin-top:80px;"></div>
-        <section style="display: flex;">
-            
-          <div style="width:650px; margin-right:149px;">
-            <p class="bold-text">Мы — маленькая, но гордая<br>
-             дизайн-студия из Краснодара. </p>
-            <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет<br>превыше креатива. Работаем не покладая рук, как роботы.</p>
+       <div class="big-divider"></div>
+        <section class="products">
+            <div class="represent-text">
+                <p class="bold-text">Мы — маленькая, но гордая<br>
+                 дизайн-студия из Краснодара. </p>
+                <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет<br>превыше креатива. Работаем не покладая рук, как роботы.</p>
          
-            <b class="we-make-text-titel">Выполняем заказы на разработку:</b>  
+                <b class="we-make-text-titel">Выполняем заказы на разработку:</b>  
                 <ul class="we-make-text">
                     <li>Веб-сайтов любой сложности</li>
                     <li>Мобильных приложений для iOS и Android</li>
@@ -103,20 +120,20 @@
             </div>
             
             
-            <div style="width:360px;">
+            <div class="nerds-advantages-numbers">
                 
                 <img src="images/nerds_picture.jpg" alt="nerd's" style="width:360x; height: 208px;">
                 <b class="we-make-text-titel">с 2004 года Любим точность во всем:</b>
-                <div style="display:flex;">
-                        <div style="margin-right:25px;">
+                <div class="flex">
+                        <div class="numbers-text">
                             <p class="numbers">146<sup>%</sup></p>
                             <p>Уровень самоотдачи</p>
                         </div>
-                        <div style="margin-right:25px;">
+                        <div class="numbers-text">
                             <p class="numbers">100<sup>%</sup></p>
                             <p>Соблюдение сроков</p>
                         </div>
-                        <div>
+                        <div class="numbers-text">
                             <p class="numbers">50<sup>%</sup></p>
                             <p>Минимальная предоплата</p>
                         </div>    
@@ -153,26 +170,29 @@
                 </li>
             </ul>
             
-          <div class="big-divider-bottom"></div>
+          <div class="big-divider-bottom" ></div>
         
         </section> 
             
-            
+        </div>    
         <!--adress-->
-         
+         <section class="wrapper">
               <div class="white-back-map">
+                  <div class="adress">
                     <h2>NЁRDS DESIGN STUDIO</h2>
                     <p class="map-text">191186, Санкт-Петербург, 
                         ул. Б. Конюшенная, д. 19/8</p>
                     <p class="map-text">тел. +7 (812) 275-75-75</p>
                     <button type="button" class="write-back-btn">Напишите нам</button>
-              </div>
-        
-            </div>
-         <!--adress-->
+                 </div>
+             </div>
+        </section>
+            
         <!--map-->
             <div>
-                    <img src="images/map_logo_nerds.png" alt="191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8" style="width:100%">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3819.8676304657874!2d30.410304537029784!3d59.71868843642829!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46962115abc8977b%3A0x1d4d4bbd2222f4a6!2sKonyushennaya%20Ulitsa%2C%2019%2C%20Pushkin%2C%20Sankt-Peterburg%2C%20196601!5e0!3m2!1sde!2sru!4v1570974065014!5m2!1sde!2sru" width="100%" height="416" frameborder="0" style="border:0;" allowfullscreen="">
+                    </iframe>
+            
             </div>
         <!--map-->    
             
@@ -203,7 +223,7 @@
       <!--форма-->
         <div class="wrapper">    
         <footer>
-                <section>
+                <section style="display:flex;">
                         <ul class="socials">
                            <li class="grey-cirle">
                                <a href="#" aria-label="nerd's во вконтакте" class="social-vk"><span class="visually-hidden">vkontakte</span></a>
@@ -216,7 +236,7 @@
                            </li>
                        </ul>
 
-                        <div>  
+                        <div style="margin: 70px 0px 0px 130px;">  
                             <b class="footer-titel">Давайте дружить, это выгодно!</b>
                            <p style="color: #444444;">Скидка 10% для друзей из социальных сетей.</p>
                         </div>     
@@ -226,3 +246,4 @@
         </div>
      </body>
 </html>
+
